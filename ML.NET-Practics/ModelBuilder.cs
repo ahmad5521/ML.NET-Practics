@@ -128,9 +128,9 @@ namespace ML.NET_Practics
         private static void SaveModel(MLContext mlContext, ITransformer mlModel, string modelRelativePath, DataViewSchema modelInputSchema)
         {
             // Save/persist the trained model to a .ZIP file
-            Console.WriteLine($"=============== Saving the model  ===============");
+            //Console.WriteLine($"=============== Saving the model  ===============");
             mlContext.Model.Save(mlModel, modelInputSchema, GetAbsolutePath(modelRelativePath));
-            Console.WriteLine("The model is saved to {0}", GetAbsolutePath(modelRelativePath));
+            //Console.WriteLine("The model is saved to {0}", GetAbsolutePath(modelRelativePath));
         }
 
         public static string GetAbsolutePath(string relativePath)
