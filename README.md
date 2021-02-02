@@ -15,6 +15,7 @@ In my Senarie [which already done using R](https://ahmasirier.medium.com/executi
 ```
 ## Build training pipeline
 
+```c#
             var dataProcessPipeline = mlContext.Transforms.Categorical.OneHotEncoding(new[]
                 {
                     new InputOutputColumnPair("Marital Status", "Marital Status"),
@@ -52,15 +53,18 @@ In my Senarie [which already done using R](https://ahmasirier.medium.com/executi
             var trainer = mlContext.BinaryClassification.Trainers.FastForest(labelColumnName: @"default", featureColumnName: "Features");
 
             var trainingPipeline = dataProcessPipeline.Append(trainer);
-           
+   ```
+   
 ## Training  model
 
 
+```c#
             ITransformer model = trainingPipeline.Fit(trainingDataView);
-
+```
 
 ## Evaluate Non Calibrated to get model's accuracy metrics
 
+```c#
             IDataView predictions = model.Transform(trainingDataView);
             var metrics = mlContext.BinaryClassification.EvaluateNonCalibrated(predictions, "default", "Score");
             Console.WriteLine($"*   Metrics for Binary Classfication model      ");
@@ -73,12 +77,13 @@ In my Senarie [which already done using R](https://ahmasirier.medium.com/executi
             Console.WriteLine($"*   NegativeRecall:        {metrics.NegativeRecall:0.##}");
             Console.WriteLine($"*   PositivePrecision:        {metrics.PositivePrecision:0.##}");
             Console.WriteLine($"*   PositiveRecall:        {metrics.PositiveRecall:0.##}");
-
+```
 
 
 ## Using  model
 Using model to make multi prediction, Comparing actual Default value with predicted Default value from sample data...
 
+```c#
             foreach (var item in list)
             {
                 var predictionResult = ConsumeModel.Predict(item);
@@ -89,7 +94,7 @@ Using model to make multi prediction, Comparing actual Default value with predic
                 Console.WriteLine($"Predicted Value(Score): {predictionResult.Score}");
             }
             
-            
+```
             
             
 ## Result
