@@ -1,5 +1,5 @@
 # ML.NET-Practics
-The Idia Came when I see the Library and feel cerucity to try it!!
+The Idea Came when I see the Library and feel cerucity to try it!!
 
 ![Image of start](https://i.ytimg.com/vi/x-XPfTA8Glk/maxresdefault.jpg)
 
