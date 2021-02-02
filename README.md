@@ -1,14 +1,11 @@
 # ML.NET-Practics
 The Idia Came when I see the Library and feel cerucity to try it!!
 
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
 
-In my Senarie (which already done using R - found hear) i wan tto applay Binary classification to predict the apility of premium default fro new potintial customer
-
-https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-by-the-customer-is-the-major-revenue-source-for-a21f3be88f0
-
-
-# loading data From Text File
+In my Senarie [which already done using R](https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-by-the-customer-is-the-major-revenue-source-for-a21f3be88f0) i want to applay Binary classification to predict the apility of premium default fro new potintial customer
+## loading data From Text File
 
 
           IDataView trainingDataView = mlContext.Data.LoadFromTextFile<ModelInput>(
@@ -18,7 +15,7 @@ https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-b
                                           allowQuoting: true,
                                           allowSparse: false);
                                           
-# Build training pipeline
+## Build training pipeline
 
             var dataProcessPipeline = mlContext.Transforms.Categorical.OneHotEncoding(new[]
                 {
@@ -58,13 +55,13 @@ https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-b
 
             var trainingPipeline = dataProcessPipeline.Append(trainer);
            
-# Training  model
+## Training  model
 
 
             ITransformer model = trainingPipeline.Fit(trainingDataView);
 
 
-# Evaluate Non Calibrated to get model's accuracy metrics
+## Evaluate Non Calibrated to get model's accuracy metrics
 
             IDataView predictions = model.Transform(trainingDataView);
             var metrics = mlContext.BinaryClassification.EvaluateNonCalibrated(predictions, "default", "Score");
@@ -81,7 +78,7 @@ https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-b
 
 
 
-# Using  model
+## Using  model
 Using model to make multi prediction, Comparing actual Default value with predicted Default value from sample data...
 
             foreach (var item in list)
