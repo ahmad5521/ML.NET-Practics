@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ML.NET_Practics.Model</RootNamespace>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.ML" Version="1.5.2" />
+		<PackageReference Include="Microsoft.ML.FastTree" Version="1.5.2" />
+	</ItemGroup>
+
+</Project>

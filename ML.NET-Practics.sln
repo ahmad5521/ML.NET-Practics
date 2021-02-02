@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.NET-Practics", "ML.NET-Practics\ML.NET-Practics.csproj", "{6A677188-0904-4756-A15D-7C4CAA9ED5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.NET-Practics.Model", "ML.NET-Practics.Model\ML.NET-Practics.Model.csproj", "{AC0FDF0A-0CA8-40E8-AE56-4172F91B5CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A677188-0904-4756-A15D-7C4CAA9ED5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A677188-0904-4756-A15D-7C4CAA9ED5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A677188-0904-4756-A15D-7C4CAA9ED5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A677188-0904-4756-A15D-7C4CAA9ED5A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0FDF0A-0CA8-40E8-AE56-4172F91B5CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0FDF0A-0CA8-40E8-AE56-4172F91B5CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0FDF0A-0CA8-40E8-AE56-4172F91B5CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0FDF0A-0CA8-40E8-AE56-4172F91B5CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12BC0B9B-1258-4EE1-A893-BD01A03128D6}
+	EndGlobalSection
+EndGlobal

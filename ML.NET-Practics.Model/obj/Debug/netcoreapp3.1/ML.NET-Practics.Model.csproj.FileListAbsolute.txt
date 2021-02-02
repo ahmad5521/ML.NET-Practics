@@ -1,0 +1,9 @@
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\bin\Debug\netcoreapp3.1\ML.NET-Practics.Model.deps.json
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\bin\Debug\netcoreapp3.1\ML.NET-Practics.Model.dll
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\bin\Debug\netcoreapp3.1\ML.NET-Practics.Model.pdb
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\obj\Debug\netcoreapp3.1\ML.NET-Practics.Model.csprojAssemblyReference.cache
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\obj\Debug\netcoreapp3.1\ML.NET-Practics.Model.AssemblyInfoInputs.cache
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\obj\Debug\netcoreapp3.1\ML.NET-Practics.Model.AssemblyInfo.cs
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\obj\Debug\netcoreapp3.1\ML.NET-Practics.Model.csproj.CoreCompileInputs.cache
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\obj\Debug\netcoreapp3.1\ML.NET-Practics.Model.dll
+C:\Users\ahmasiri\source\repos\ML.NET-Practics\ML.NET-Practics.Model\obj\Debug\netcoreapp3.1\ML.NET-Practics.Model.pdb
