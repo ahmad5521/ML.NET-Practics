@@ -1,7 +1,7 @@
 # ML.NET-Practics
 ![Image of start](https://i.ytimg.com/vi/x-XPfTA8Glk/maxresdefault.jpg)
 
-In my Senarie [which already done using R](https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-by-the-customer-is-the-major-revenue-source-for-a21f3be88f0) i want to applay Binary classification to predict defaulting in Installments Payment for new potintial customer
+In my Senarie [which already done using R](https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-by-the-customer-is-the-major-revenue-source-for-a21f3be88f0) i want to applay Binary classification to predict defaulting in Installments Payment for new potintial customer.
 ## loading data From Text File
 
 ```c#
