@@ -10,7 +10,7 @@ namespace ML.NET_Practics
 {
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = @"C:\Users\ahmasiri\Downloads\Insurance Premium Default-Dataset.csv";
+        private static string TRAIN_DATA_FILE = @"Insurance Premium Default-Dataset.csv";
         private static string MODEL_FILE = ConsumeModel.MLNetModelPath;
 
         // Create MLContext to be shared across the model creation workflow objects 
@@ -19,9 +19,11 @@ namespace ML.NET_Practics
 
         public static void CreateModel()
         {
+
+            var path = Path.Combine(Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName, "Data", TRAIN_DATA_FILE);
             // Load Data
             IDataView trainingDataView = mlContext.Data.LoadFromTextFile<ModelInput>(
-                                            path: TRAIN_DATA_FILEPATH,
+                                            path: path,
                                             hasHeader: true,
                                             separatorChar: ',',
                                             allowQuoting: true,
@@ -91,7 +93,6 @@ namespace ML.NET_Practics
 
             ITransformer model = trainingPipeline.Fit(trainingDataView);
 
-            Console.WriteLine($"=============== End of training process ===============");
             return model;
         }
 
