@@ -1,7 +1,7 @@
 # ML.NET-Practics
 The Idia Came when I see the Library and feel cerucity to try it!!
 
-![Image of Yaktocat](https://i.ytimg.com/vi/x-XPfTA8Glk/maxresdefault.jpg)
+![Image of start](https://i.ytimg.com/vi/x-XPfTA8Glk/maxresdefault.jpg)
 
 
 In my Senarie [which already done using R](https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-by-the-customer-is-the-major-revenue-source-for-a21f3be88f0) i want to applay Binary classification to predict the apility of premium default fro new potintial customer
@@ -94,4 +94,7 @@ Using model to make multi prediction, Comparing actual Default value with predic
             
             
             
-            
+## Result
+
+![Image of Result](https://github.com/ahmad5521/ML.NET-Practics/blob/master/ML.NET-Practics/Data/Capture.JPG?raw=true)
+
