@@ -4,7 +4,7 @@
 In my Senarie [which already done using R](https://ahmasirier.medium.com/executive-summary-problem-statement-premium-paid-by-the-customer-is-the-major-revenue-source-for-a21f3be88f0) i want to applay Binary classification to predict defaulting in Installments Payment for new potintial customer
 ## loading data From Text File
 
-
+```c#
           IDataView trainingDataView = mlContext.Data.LoadFromTextFile<ModelInput>(
                                           path: path,
                                           hasHeader: true,
@@ -12,6 +12,7 @@ In my Senarie [which already done using R](https://ahmasirier.medium.com/executi
                                           allowQuoting: true,
                                           allowSparse: false);
                                           
+```
 ## Build training pipeline
 
             var dataProcessPipeline = mlContext.Transforms.Categorical.OneHotEncoding(new[]
